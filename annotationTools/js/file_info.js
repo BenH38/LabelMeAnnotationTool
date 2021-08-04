@@ -48,7 +48,9 @@ function file_info() {
                 var par_field = this.GetURLField(par_tag);
                 var par_value = this.GetURLValue(par_tag);
                 if(par_field=='mode'){
-                    this.mode = par_value;
+                    // override mode for application - made by ben howells
+                    //this.mode = par_value;
+                    this.mode='f'
 					if (this.mode != 'c' && this.mode != 'f'){
 						$('#prevImage').hide();
 						if (bname == 'Netscape'){
